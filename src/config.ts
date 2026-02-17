@@ -19,11 +19,11 @@ import { LinkPreset } from "./types/config";
 // 移除i18n导入以避免循环依赖
 
 // 定义站点语言
-const SITE_LANG = "ja"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
+	title: "Fishing's Blog",
+	subtitle: "Mizuki",
 	siteURL: "https://fishingmz.github.io/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-02-14", // 站点开始运行日期，用于站点统计组件计算运行天数
 
@@ -72,15 +72,20 @@ export const siteConfig: SiteConfig = {
 	},
 
 	bilibili: {
-		vmid: "your-bilibili-vmid", // 在此处设置你的Bilibili用户ID (vmid)，例如 "1129280784"
+		vmid: "1115221489", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
 		fetchOnDev: false, // 是否在开发环境下获取 Bilibili 数据（默认 false）
-		SESSDATA: "", // Bilibili SESSDATA（可选，用于获取观看进度，从浏览器cookie中获取）
 		coverMirror: "", // 封面图片镜像源（可选，如果需要使用镜像源，例如 "https://images.weserv.nl/?url="）
 		useWebp: true, // 是否使用WebP格式（默认 true）
+
+		// bilibili 观看进度配置说明(可选，如需配置仔细阅读):
+		// 1. 本地开发：请在 .env 文件中填写 BILI_SESSDATA=your_SESSDATA
+		// 2. 远程构建：请在 GitHub 仓库 Settings -> Secrets 中添加 BILI_SESSDATA
+		// 注意：SESSDATA 为账号凭证，为防止泄露，切记不可使用硬编码。
+		// 安全提示：如 SESSDATA 已泄露，请打开 B站手机端 —— 我的 —— 设置 —— 安全隐私 —— 登陆设备管理 —— 一键退登，销毁已泄露的账号凭证
 	},
 
 	anime: {
-		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
+		mode: "bilibili", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
 	},
 
 	// 文章列表布局配置
@@ -155,7 +160,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "わたしの部屋", // 主页横幅主标题
+			title: "Hello,Wolrd!", // 主页横幅主标题
 
 			subtitle: [
 				"特別なことはないけど、君がいると十分です",
@@ -188,7 +193,7 @@ export const siteConfig: SiteConfig = {
 		enable: true, // 启用目录功能
 		mode: "sidebar", // 目录显示模式："float" 悬浮按钮模式，"sidebar" 侧边栏模式
 		depth: 2, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
-		useJapaneseBadge: true, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
+		useJapaneseBadge: false, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...
 	},
 	showCoverInContent: true, // 在文章内容页显示文章封面
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
@@ -249,7 +254,7 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	},
 	zIndex: -1, // 层级，确保壁纸在背景层
 	opacity: 0.8, // 壁纸透明度
-	blur: 1, // 背景模糊程度
+	blur: 5, // 背景模糊程度（初始1）
 };
 
 export const navBarConfig: NavBarConfig = {
@@ -264,19 +269,19 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/matsuzaka-yuki/Mizuki",
+					url: "https://github.com/FishingMZ/blog",
 					external: true,
 					icon: "fa6-brands:github",
 				},
 				{
 					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					url: "https://space.bilibili.com/1115221489",
 					external: true,
 					icon: "fa6-brands:bilibili",
 				},
 				{
 					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					url: "https://gitee.com/fishingmz/blog",
 					external: true,
 					icon: "mdi:git",
 				},
@@ -353,8 +358,8 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "まつざか ゆき",
+	avatar: "assets/images/xiao_ke.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	name: "Fishing_MZ",
 	bio: "世界は大きい、君は行かなければならない",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
@@ -364,17 +369,17 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Bilibili",
 			icon: "fa6-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
+			url: "https://space.bilibili.com/1115221489",
 		},
 		{
 			name: "Gitee",
 			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			url: "https://gitee.com/fishingmz",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/FishingMZ",
 		},
 		{
 			name: "Codeberg",
@@ -384,7 +389,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Discord",
 			icon: "fa6-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			url: "https://discord.gg/dCGvnTtpHN",
 		},
 	],
 };
@@ -448,7 +453,7 @@ export const announcementConfig: AnnouncementConfig = {
 	link: {
 		enable: true, // 启用链接
 		text: "Learn More", // 链接文本
-		url: "/about/", // 链接 URL
+		url: "/blog/about/", // 链接 URL
 		external: false, // 内部链接
 	},
 };
@@ -457,7 +462,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
-		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
+		"https://api.injahow.cn/meting/?server=:server&type=:type&id=:id", // Meting API 地址
 	id: "14164869977", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
@@ -611,7 +616,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: true, // 启用看板娘
+	enable: flase, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 模型位置
 	width: 280, // 默认宽度
