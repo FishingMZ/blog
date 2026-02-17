@@ -435,9 +435,9 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
-		envId: "https://twikoo.vercel.app",
+		envId: "https://twikoo1-murex.vercel.app",
 		lang: SITE_LANG,
 	},
 };
@@ -588,7 +588,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
@@ -616,7 +616,7 @@ export const sakuraConfig: SakuraConfig = {
 
 // Pio 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: false, // 启用看板娘
+	enable: true, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 模型位置
 	width: 280, // 默认宽度
@@ -651,10 +651,10 @@ export const widgetConfigs = {
 } as const;
 
 export const umamiConfig = {
-	enabled: false, // 是否显示Umami统计
+	enabled: true, // 是否显示Umami统计
 	apiKey: import.meta.env.UMAMI_API_KEY || "api_xxxxxxxx", // API密钥优先从环境变量读取，否则使用配置文件中的值
 	baseUrl: "https://api.umami.is", // Umami Cloud API地址
 	scripts: `
-<script defer src="XXXX.XXX" data-website-id="ABCD1234"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="4b8d51c2-ec7c-4c20-93e5-f0bf77706b88"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;
