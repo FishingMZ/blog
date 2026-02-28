@@ -24,7 +24,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "Fishing's Blog",
 	subtitle: "Mizuki",
-	siteURL: "https://fishingmz.github.io/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://fish.mts1.cn/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-02-14", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -453,7 +453,7 @@ export const announcementConfig: AnnouncementConfig = {
 	link: {
 		enable: true, // 启用链接
 		text: "Learn More", // 链接文本
-		url: "/blog/about/", // 链接 URL
+		url: "/about/", // 链接 URL
 		external: false, // 内部链接
 	},
 };
