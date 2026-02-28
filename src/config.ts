@@ -360,7 +360,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/xiao_ke.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Fishing_MZ",
-	bio: "世界は大きい、君は行かなければならない",
+	bio: "Ciallo～ (∠・ω< )⌒★",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
