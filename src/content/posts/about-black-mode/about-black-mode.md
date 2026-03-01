@@ -16,7 +16,7 @@ Via浏览器，手机打开深色模式，但Mizuki未打开深色模式
 
 主页横幅会覆盖一层黑色遮罩，与文章部分衔接不平滑，影响观感
 
-![Alt text](/src/content/posts/about-black-mode/Screenshot_20260301-132440_Via.png)
+![Alt text](https://raw.githubusercontent.com/FishingMZ/blog/refs/heads/master/src/content/posts/about-black-mode/Screenshot_20260301-132440_Via.png)
 
 # 原因（推测）
 
