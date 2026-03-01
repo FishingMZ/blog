@@ -163,11 +163,11 @@ export const siteConfig: SiteConfig = {
 			title: "Hello,Wolrd!", // 主页横幅主标题
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"我差一点就碰到星星了，只是后来天亮了。",
+				"人总是执着于第一眼就喜欢的东西。",
+				"⭐🌟✨Welcome to my blog 😘😘😘",
+				"🐟🐟🐟Fishing の 妙妙屋🏠🏠🏠",
+				"长风破浪会有时，直挂云帆济沧海。",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -309,7 +309,7 @@ export const navBarConfig: NavBarConfig = {
 				},
 				{
 					name: "Devices",
-					url: "devices/",
+					url: "/devices/",
 					icon: "material-symbols:devices",
 					external: false,
 				},
@@ -447,8 +447,8 @@ export const shareConfig: ShareConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "ブログへようこそ！これはサンプルの告知です", // 公告内容
+	title: "Announcement", // 公告标题，填空使用i18n字符串Key.announcement
+	content: "哎不是🧐🧐🧐怎么又有bug😡😡😡", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -560,7 +560,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	components: {
 		left: ["profile", "announcement", "categories", "tags"],
 		right: ["site-stats", "calendar"],
-		drawer: ["profile", "announcement"],
+		drawer: ["profile", "announcement","categories", "tags"],
 	},
 
 	// 默认动画配置
