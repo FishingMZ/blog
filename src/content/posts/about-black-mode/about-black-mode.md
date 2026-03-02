@@ -3,7 +3,7 @@ title: 关于深色模式
 published: 2026-03-02
 pinned: false
 description: 详细说一说深色模式的bug
-tags: [Mizuki, bugs]
+tags: [Mizuki, Bugs]
 category: Notes
 draft: false
 ---
