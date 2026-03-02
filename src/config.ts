@@ -163,11 +163,13 @@ export const siteConfig: SiteConfig = {
 			title: "Hello,Wolrd!", // 主页横幅主标题
 
 			subtitle: [
+    "苔花如米小，也学牡丹开——袁枚《苔》"
 				"我差一点就碰到星星了，只是后来天亮了。",
 				"人总是执着于第一眼就喜欢的东西。",
-				"⭐🌟✨Welcome to my blog 😘😘😘",
-				"🐟🐟🐟Fishing の 妙妙屋🏠🏠🏠",
-				"长风破浪会有时，直挂云帆济沧海。",
+				"✨✨✨Welcome to my blog 😘😘😘",
+    "行到水穷处，坐看云起时——王维《终南别业》"
+				"🐟🐟🐟Fishing の 神秘打野点🏠🏠🏠",
+				"长风破浪会有时，直挂云帆济沧海——李白《行路难》",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -447,7 +449,7 @@ export const shareConfig: ShareConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "Announcement", // 公告标题，填空使用i18n字符串Key.announcement
+	title: "", // 公告标题，填空使用i18n字符串Key.announcement
 	content: "哎不是🧐🧐🧐怎么又有bug😡😡😡", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
@@ -463,7 +465,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://api.injahow.cn/meting/?server=:server&type=:type&id=:id", // Meting API 地址
-	id: "14164869977", // 歌单ID
+	id: "7474946240", // 歌单ID
 	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
 	type: "playlist", // 播单类型
 };
@@ -560,7 +562,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 	components: {
 		left: ["profile", "announcement", "categories", "tags"],
 		right: ["site-stats", "calendar"],
-		drawer: ["profile", "announcement","categories", "tags"],
+		drawer: ["profile", "announcement","categories", "tags","site-stats", "calendar"],
 	},
 
 	// 默认动画配置
