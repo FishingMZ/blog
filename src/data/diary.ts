@@ -23,9 +23,8 @@ const diaryData: DiaryItem[] = [
 	{
 		id: 2,
 		content:
-			"这是一篇日记",
-		date: "2026-03-02T22:41:00Z",
-		images: ["/images/diary/sakura.jpg", "/images/diary/1.jpg"],
+			"这是第一篇日记。3月4号开学，但主包至今仍未完成我的作业。天气还可以。yinghao1今天早上10点多前来拜访我，和他打了一会mc随机生存，2点送别并归还了我的笔记本。试图在笔记本上安装Archlinux/Debian结果失败。因好友开学而无人陪玩感到悲伤寂寥。晚上剃度准备开学。",
+		date: "2026-03-02T22:56:00Z",
 	},
 ];
 
