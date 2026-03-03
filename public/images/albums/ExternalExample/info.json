@@ -20,5 +20,35 @@
 			"width": 800,
 			"height": 600
 		}
+		{
+			"id": "external-2",
+			"src": "https://picsum.photos/800/600?random=2",
+			"alt": "随机图片 2",
+			"title": "美丽的风景",
+			"description": "这是一张来自外链的美丽风景图片",
+			"tags": ["风景", "自然"],
+			"width": 800,
+			"height": 600
+		}
+		{
+			"id": "external-3",
+			"src": "https://picsum.photos/800/600?random=2",
+			"alt": "随机图片 3",
+			"title": "美丽的风景",
+			"description": "这是一张来自外链的美丽风景图片",
+			"tags": ["风景", "自然"],
+			"width": 800,
+			"height": 600
+		}
+		{
+			"id": "external-4",
+			"src": "https://picsum.photos/800/600?random=2",
+			"alt": "随机图片 4",
+			"title": "美丽的风景",
+			"description": "这是一张来自外链的美丽风景图片",
+			"tags": ["风景", "自然"],
+			"width": 800,
+			"height": 600
+		}
 	]
 }
