@@ -2,7 +2,7 @@
 title: 网站说明
 published: 2026-03-04
 pinned: false
-description: 给网站各个部分作一个阐述以
+description: 给网站各个部分作一个阐述
 tags: [Mizuki, Blogging]
 category: Notes
 draft: false
@@ -37,6 +37,6 @@ draft: false
 
 至于顶栏“其他”板块中剩下的三个项目展示、技能展示和时间线，我没有原作者这么高的技术力和这么丰富的阅历，因此不会修改。🤓
 
-# 其他
+# 其他事项
 
 也许我会把每个月的日记合并在一起，每月发布一个日记合订本，这样会比较清楚，日记界面也没有太多压力。
