@@ -13,6 +13,7 @@ export const zh_CN: Translation = {
 	[Key.navMy]: "我的",
 	[Key.navAbout]: "关于",
 	[Key.navOthers]: "其他",
+	[Key.navCloud]: "网盘",
 
 	[Key.tags]: "标签",
 	[Key.categories]: "分类",
