@@ -13,7 +13,6 @@ export const en: Translation = {
 	[Key.navMy]: "My",
 	[Key.navAbout]: "About",
 	[Key.navOthers]: "Others",
-	[Key.navCloud]: "Cloud",
 
 	[Key.tags]: "Tags",
 	[Key.categories]: "Categories",
