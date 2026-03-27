@@ -13,7 +13,6 @@ export const ja: Translation = {
 	[Key.navMy]: "私の",
 	[Key.navAbout]: "情報",
 	[Key.navOthers]: "その他",
-	[Key.navCloud]: "クラウド",
 
 	[Key.tags]: "タグ",
 	[Key.categories]: "カテゴリー",
