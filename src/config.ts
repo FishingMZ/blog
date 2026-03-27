@@ -354,16 +354,10 @@ export const navBarConfig: NavBarConfig = {
 					url: "/timeline/",
 					icon: "material-symbols:timeline",
 				},
-			],
-		},
-		{
-			name: "Cloud",
-			url: "#",
-			icon: "material-symbols:more-horiz",
-			children: [
 				{
 					name: "YF_Cloud",
 					url: "https://fishingmz.github.io/cloud/",
+					external: true,
 					icon: "material-symbols:cloud",
 				},
 			],
