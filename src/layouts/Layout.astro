@@ -9,6 +9,7 @@ import {
 	siteConfig,
 } from "@/config";
 import { umamiConfig } from "../config";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 const BANNER_HEIGHT = 35;
 const BANNER_HEIGHT_EXTEND = 30;
@@ -173,6 +174,7 @@ if (siteConfig.font) {
 	data-overlayscrollbars-initialize
 >
 	<head>
+		<SpeedInsights />
 		<!-- 第三方分析脚本 - 延迟加载优化 -->
 		<script is:inline>
 			// 使用 requestIdleCallback 延迟加载第三方脚本
