@@ -271,7 +271,7 @@ export const navBarConfig: NavBarConfig = {
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/FishingMZ/blog",
+					url: "https://github.com/FishingMZ",
 					external: true,
 					icon: "fa6-brands:github",
 				},
@@ -282,10 +282,10 @@ export const navBarConfig: NavBarConfig = {
 					icon: "fa6-brands:bilibili",
 				},
 				{
-					name: "Gitee",
-					url: "https://gitee.com/fishingmz/blog",
+					name: "YF_Cloud",
+					url: "http://fish.mts1.cn/",
 					external: true,
-					icon: "mdi:git",
+					icon: "material-symbols:cloud",
 				},
 			],
 		},
@@ -353,12 +353,6 @@ export const navBarConfig: NavBarConfig = {
 					name: "Timeline",
 					url: "/timeline/",
 					icon: "material-symbols:timeline",
-				},
-				{
-					name: "YF_Cloud",
-					url: "https://fishingmz.github.io/cloud/",
-					external: true,
-					icon: "material-symbols:cloud",
 				},
 			],
 		},
