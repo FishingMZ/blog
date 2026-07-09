@@ -24,7 +24,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "Fishing's Blog",
 	subtitle: "Mizuki",
-	siteURL: "https://fish.sf0.top/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://fish.5yu.org/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-02-14", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -51,7 +51,7 @@ export const siteConfig: SiteConfig = {
 	// 顶栏标题配置
 	navbarTitle: {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
-		mode: "logo",
+		mode: "text-icon",
 		// 顶栏标题文本
 		text: "MizukiUI",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
@@ -160,9 +160,10 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "Hello,Wolrd!", // 主页横幅主标题
+			title: "Fishing's Blog", // 主页横幅主标题
 
 			subtitle: [
+				"落尽红樱君不见，轻绘梨花泪沾衣",
     			"苔花如米小，也学牡丹开——袁枚《苔》",
 				"我差一点就碰到星星了，只是后来天亮了。",
 				"人总是执着于第一眼就喜欢的东西。",
@@ -173,7 +174,6 @@ export const siteConfig: SiteConfig = {
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
-
 				speed: 100, // 打字速度（毫秒）
 				deleteSpeed: 50, // 删除速度（毫秒）
 				pauseTime: 2000, // 完全显示后的暂停时间（毫秒）
@@ -282,7 +282,7 @@ export const navBarConfig: NavBarConfig = {
 					icon: "fa6-brands:bilibili",
 				},
 				{
-					name: "Fishing's Home",
+					name: "HomePage",
 					url: "http://fish.mts1.cn/",
 					external: true,
 					icon: "material-symbols:home",
@@ -328,6 +328,12 @@ export const navBarConfig: NavBarConfig = {
 					icon: "material-symbols:person",
 				},
 				{
+					name: "Usage",
+					url: "https://cloud.umami.is/share/nEwHdYSShC2KOvya/",
+					external: true,
+					icon: "material-symbols:data-usage-rounded",
+				},
+				{
 					name: "Friends",
 					url: "/friends/",
 					icon: "material-symbols:group",
@@ -360,7 +366,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/xiao_ke.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/kai_lu.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Fishing_MZ",
 	bio: "Ciallo～ (∠・ω< )⌒★",
 	typewriter: {
@@ -450,7 +456,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "哎不是🧐🧐🧐怎么又有bug😡😡😡", // 公告内容
+	content: "关注鱼神谢谢喵", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -654,7 +660,7 @@ export const widgetConfigs = {
 
 export const umamiConfig = {
 	enabled: true, // 是否显示Umami统计
-	apiKey: import.meta.env.UMAMI_API_KEY || "api_SDXzYo9Lcsm1DOannAwbHWFJUTVEk0HP", // API密钥优先从环境变量读取，否则使用配置文件中的值
+	apiKey: import.meta.env.UMAMI_API_KEY || "api_XXXXXXXXX", // API密钥优先从环境变量读取，否则使用配置文件中的值
 	baseUrl: "https://api.umami.is", // Umami Cloud API地址
 	scripts: `
 <script defer src="https://cloud.umami.is/script.js" data-website-id="800b7047-b3c4-42a0-b2d7-636bcc2af2b8"></script>
